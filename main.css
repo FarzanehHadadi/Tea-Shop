@@ -1,0 +1,21 @@
+/* CSS HEX */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --yellow-green-crayola: #c3d898ff;
+  --hunter-green: #28502eff;
+  --dark-olive-green: #47682cff;
+  --rich-black-fogra-29: #0d1321ff;
+  --fulvous: #e98a15ff;
+  --mainTransition: all 2s ease;
+}
+body {
+  background: var(--dark-olive-green);
+  color: var(--yellow-green-crayola);
+}
+h2 {
+  font-size: 5rem;
+}
