@@ -1,0 +1,38 @@
+@media screen and (min-width: 769px) {
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .product {
+    flex: 0 0 48%;
+  }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .skill {
+    flex: 0 0 45%;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .product {
+    flex: 0 0 24%;
+  }
+  .skill {
+    flex: 0 0 30%;
+  }
+  /* .product-info h3,
+  .product-info h4 {
+    flex: 0 0 20%;
+  } */
+  .product-info {
+    padding: 1rem 0.2rem !important;
+  }
+  .product-info h3 {
+    font-size: 0.9rem;
+  }
+}
