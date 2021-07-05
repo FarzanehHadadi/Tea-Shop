@@ -93,17 +93,18 @@ header {
 /* product-section */
 .products-section {
   background: var(--fulvous-light);
-  padding: var(--section-padding);
+  padding-bottom: 3rem;
 }
-.products-title {
+.title {
   background-color: var(--yellow-green-crayola);
   color: var(--rich-black-fogra-29);
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   padding: 1rem;
   color: var(--dark-olive-green);
 }
-.products-title a {
+.title a {
   color: var(--dark-olive-green);
   font-size: 1.2rem;
   border: var(--dark-olive-green) solid 2px;
@@ -112,7 +113,7 @@ header {
   align-self: center;
   transition: var(--mainTransition);
 }
-.products-title a:hover {
+.title a:hover {
   color: var(--yellow-green-crayola);
   background: var(--dark-olive-green);
 }
@@ -231,4 +232,82 @@ header {
   color: var(--dark-grey);
   font-size: 1.3rem;
 }
+.contact-form {
+  margin: 0 2rem;
+  text-align: right;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  text-align: right;
+  padding: 1rem 0.5rem;
+  border-bottom: var(--dark-olive-green) solid 1px;
+  color: var(--dark-olive-green);
+  font-size: 1.2rem;
+}
+.form-control::placeholder {
+  color: var(--dark-olive-green);
+  opacity: 0.8;
+  font-size: 1.2rem;
+  text-align: right;
+}
+.formBtn {
+  display: inline-block;
+
+  color: var(--fulvous-light);
+  background: var(--dark-olive-green);
+  padding: 0.6rem 1.5rem;
+  outline: var(--dark-olive-green) 2px solid;
+  outline-offset: 2px;
+  cursor: pointer;
+}
 /* end of contact */
+/* offer */
+.section-offer {
+}
+.offerBuy,
+.offerSell {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(245, 240, 100, 0.3)),
+    url("./img/pexels-karolina-grabowska-5625130.jpg") center/cover fixed
+      no-repeat;
+  padding: 2rem;
+  color: var(--fulvous-light);
+  text-align: right;
+}
+.section-offer h3 {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.offerSell {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(245, 240, 100, 0.3)),
+    url("./img/pexels-karolina-grabowska-5632397.jpg") center/cover fixed
+      no-repeat;
+}
+.offerBtn {
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 2rem 0;
+  text-align: left;
+  color: var(--fulvous-light);
+  border: var(--fulvous-light) 2px solid;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: var(--mainTransition);
+}
+.offerBtn:hover {
+  background: var(--fulvous-light);
+  color: var(--dark-grey);
+}
+/* end of offer */
+/* footer */
+footer {
+  padding: var(--section-padding);
+  background: var(--hunter-green);
+  color: var(--fulvous);
+  text-align: center;
+  font-size: 1.5rem;
+}

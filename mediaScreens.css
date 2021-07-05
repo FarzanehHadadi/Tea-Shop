@@ -16,6 +16,16 @@
   .skill {
     flex: 0 0 45%;
   }
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .contact-info,
+  .contact-form {
+    flex: 0 0 45%;
+  }
 }
 
 @media screen and (min-width: 1170px) {
@@ -34,5 +44,14 @@
   }
   .product-info h3 {
     font-size: 0.9rem;
+  }
+  .offer-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .offerSell,
+  .offerBuy {
+    flex: 0 0 45%;
   }
 }
