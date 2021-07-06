@@ -23,14 +23,30 @@
 
 <body>
     <header>
-        <button class="navBtn"><i class="fas fa-bars"></i></button>
-        <div class="banner">
+        <nav>
+            <div class="logo-section">
+                <div class="logo-text">
+                    <img src="./img/matcha-tea.png" alt="" class="logo">
+                    <h2>چای لاهیجان</h2>
+                </div>
+                <button class="navBtn"><i class="fas fa-bars"></i></button>
+            </div>
+            <ul class="nav-items">
+                <li><a href="#banner">خانه</a></li>
+                <li><a href="#product">محصولات</a></li>
+                <li><a href="#skill">خدمات</a></li>
+                <li><a href="#contact">تماس با ما</a></li>
+                <li><a href="#info">نوشته ها</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner" id="banner">
             <h2>بهترین چای در خاورمیانه </h2>
             <h3>چای لاهیجان</h3>
             <a href="#">اطلاعات بیشتر</a>
         </div>
     </header>
-    <section class="products-section">
+    <section class="products-section" id="product">
         <div class="section-splitter"></div>
         <div class="title">
             <h3>بهترین محصولات فروشگاه</h3>
@@ -72,10 +88,10 @@
             </article>
         </div>
     </section>
-    <section class="section-skills">
+    <section class="section-skills" id="skill">
         <div class="section-splitter"></div>
         <div class="title">
-            <h3>معرفی شرکت</h3>
+            <h3>خدمات</h3>
         </div>
         <div class="skills">
             <article class="skill">
@@ -127,7 +143,7 @@
             </article>
         </div>
     </section>
-    <section class="section-contact ">
+    <section class="section-contact" id='contact'>
         <div class="section-splitter"></div>
         <div class="title">
             <h3>تماس با ما</h3>
@@ -175,7 +191,7 @@
         </div>
     </section>
     <!-- information section -->
-    <section class="section-info">
+    <section class="section-info" id='info'>
         <div class="section-splitter"></div>
         <div class="title">
             <h3>نوشته ها</h3>
@@ -243,7 +259,7 @@
                 <div class="devider"></div>
             </article>
             <article class="info-item">
-                <div>
+                <div class="info-support-container">
 
                     <h3>پشتیبانی و راهنما</h3>
                     <ul class="info-support">

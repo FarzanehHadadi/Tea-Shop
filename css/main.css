@@ -16,7 +16,7 @@
   --fulvous-light: #fffae6;
   --grey-light: #bbbfbf;
   --mainTransition: all 1.5s ease;
-  --section-padding: 3rem 0;
+  --section-padding: 0 0 3rem 0;
   --titr-font:'BTitrBold';
   --text-font:'BNazanin';
   --slang-font:'BTitrTGEBold';
@@ -39,6 +39,38 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/pexels-cottonbro-4974496.jpg") center/cover fixed no-repeat;
 }
+/* navbar */
+nav{
+    background: var(--hunter-green);
+    padding: 0.2rem 0.6rem;
+}
+.nav-fixed{
+  position: fixed;
+  width: 100vw;
+  z-index: 5;
+  opacity: 0.7;
+}
+.logo-section{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.logo-text{
+  display: flex;
+  direction: rtl;
+  justify-content: space-between;
+}
+.logo-text h2{
+  color: var(--yellow-green-crayola);
+  font-family: var(--slang-font);
+  padding-right: 1rem;
+}
+.logo{
+  width: 40px;
+  border-radius: 50%;
+}
+
 .navBtn {
   padding: 5px;
   margin: 1rem;
@@ -51,7 +83,26 @@ header {
   color: var(--yellow-green-crayola);
   animation: scaling 2s infinite;
 }
+.nav-items{
+  list-style-type: none;
+  display: none;
+}
 
+.nav-items a{
+  display: block;
+  padding: 1rem;
+  margin: 0.5rem;
+  color: var(--hunter-green);
+  background: var(--yellow-green-crayola);
+  text-align: right;
+  transition: var(--mainTransition);
+  font-size: 1.5rem;
+}
+.nav-items a:hover{
+  color: var(--fulvous);
+  background: var(--grey-light);
+  padding-right: 2rem;
+}
 .banner {
   min-height: 100vh;
   display: flex;
@@ -360,6 +411,7 @@ header {
   color: var(--hunter-green);
   transition: var(--mainTransition);
 }
+.info-support a:hover,
 .info-text a:hover {
   transform: translateX(-20px);
   color: var(--fulvous);
@@ -457,16 +509,17 @@ header {
   margin: 1rem;
   list-style-type: square;
   color: var(--fulvous);
-
+  
 }
 .info-support li{
-   border-bottom: var(--grey-light) 0.8px solid;
+  border-bottom: var(--grey-light) 0.8px solid;
 }
 .info-support a {
   display: inline-block;
   margin: 0.9rem 0 0.8rem 0;
   padding: 0 0.5rem;
   color: var(--hunter-green);
+  transition: var(--mainTransition);
 }
 /* end of info-support */
 /* site-review */
