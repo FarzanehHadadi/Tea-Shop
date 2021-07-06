@@ -17,13 +17,22 @@
   --grey-light: #bbbfbf;
   --mainTransition: all 1.5s ease;
   --section-padding: 3rem 0;
+  --titr-font:'BTitrBold';
+  --text-font:'BNazanin';
+  --slang-font:'BTitrTGEBold';
 }
 body {
+
+  font-family: --text-font;
   background: var(--fulvous-light);
   color: var(--hunter-green);
 }
+h3{
+  font-family: var(--titr-font);
+}
 a {
   text-decoration: none;
+  font-family: var(--text-font);
 }
 /* header */
 header {
@@ -51,7 +60,8 @@ header {
   align-items: center;
 }
 .banner h2 {
-  font-size: 2.5rem;
+  font-family: var(--titr-font);
+  font-size: 3rem;
   animation: slideFromRight 5s ease-in-out 1;
 }
 .banner h3 {
@@ -59,6 +69,7 @@ header {
   margin: 2rem 0 3rem 0;
   color: var(--fulvous);
   animation: slideFromleft 5s ease-in-out 1;
+  font-family: var(--slang-font);
 }
 
 .banner a {
@@ -169,6 +180,7 @@ header {
   color: var(--fulvous-light);
 }
 .product-info h4 {
+  font-family: var(--text-font);
   color: var(--red);
   margin-bottom: 0.3rem;
   align-self: center;
@@ -191,6 +203,7 @@ header {
   margin: 1rem;
 }
 .skill a {
+  font-family: var(--titr-font);
   display: inline-block;
   margin-bottom: 1rem;
   font-size: 1.5rem;
@@ -549,6 +562,7 @@ header {
 /* end of section-quotes */
 /* footer */
 footer {
+  font-family: var(--slang-font);
   padding: var(--section-padding);
   background: var(--hunter-green);
   color: var(--fulvous);
