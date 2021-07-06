@@ -487,8 +487,66 @@ header {
    padding-right: 0.4rem;
    text-align: right;
   }
-
 /* end of information-section */
+/* section-quotes */
+.section-quotes{
+
+  text-align: center;
+}
+.owl-carousel{
+  margin: 0 auto;
+  background: darkkhaki;
+  color: white;
+  padding: 1.5rem;
+}
+.quote{
+  text-align: center;
+}
+
+.quote span{
+  margin-left: 0.3rem;
+}
+.quote h3{
+  font-size: 1rem;
+}
+.quote blockquote{
+  direction: rtl;
+  color: var(--hunter-green);
+  font-size: 1.1rem;
+  line-height: 1.3;
+  margin: 1rem 0;
+  max-width: 80%;
+}
+.quote-info {
+  display: flex!important;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.quote img{
+  border-radius: 50% ;
+  width: 80px !important;
+  height: 50px !important;
+  align-self: center;
+}
+  .quote-text{
+    text-align: right;
+    margin-right: 0.5rem;
+  }
+.quote p{
+  color: var(--dark-grey);
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+.owl-next,
+.owl-prev{
+  color: orangered!important;
+  font-size: 2rem!important;
+}
+.owl-dots .active span {
+  background: orangered !important;
+
+}
+/* end of section-quotes */
 /* footer */
 footer {
   padding: var(--section-padding);
