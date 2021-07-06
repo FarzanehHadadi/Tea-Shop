@@ -26,6 +26,9 @@
   .contact-form {
     flex: 0 0 45%;
   }
+  .info-about {
+    max-width: 70%;
+  }
 }
 
 @media screen and (min-width: 1170px) {
@@ -53,5 +56,12 @@
   .offerSell,
   .offerBuy {
     flex: 0 0 45%;
+  }
+  .info-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .info-item {
+    flex: 0 0 24%;
   }
 }
